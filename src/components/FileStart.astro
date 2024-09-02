@@ -1,0 +1,33 @@
+---
+// data imports
+import * as site from "../data/site.json";
+
+const { siteName, url, favicon } = site;
+const { title, description } = Astro.props;
+const logo = "/images/logo.svg";
+const fqTitle = siteName + " - " + title;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/x-icon" href={favicon} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={siteName} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={url} />
+<meta property="og:title" content={siteName} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={logo} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={url} />
+<meta property="twitter:title" content={siteName} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={logo} />

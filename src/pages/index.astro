@@ -1,0 +1,13 @@
+---
+// data imports
+import * as site from "../data/site.json";
+
+// layout imports
+import Layout from "../layouts/BaseLayout.astro";
+
+const { title, description } = site;
+const { pageTitle } = {title} + " Homepage";
+---
+
+<Layout {pageTitle}>
+</Layout>

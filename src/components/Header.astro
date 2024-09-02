@@ -1,0 +1,17 @@
+---
+// data imports
+import * as site from "../data/site.json";
+
+// constants from site data
+const { title, logo, author, description } = site;
+
+---
+
+        <header id="site-header" class="flex">
+            
+            <img src={logo} alt={author + " Logo"} id="site-logo" />
+            <div>
+                <h1>{title}</h1>
+                <h2>{description}</h2>
+            </div>
+        </header>

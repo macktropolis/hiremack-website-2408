@@ -1,0 +1,53 @@
+/*  ROOT VARIABLES
+-------------------------------------------------------------- 
+    Modify, extend or replace these variables with your own
+    variables.
+*/
+
+:root {
+  /*  HSL Color Values 
+        Usage Example: color: hsl( var(--hsl-primary), 100% )
+    */
+  --hsl-primary: 196, 60%, 57%;
+  --hsl-secondary: 196, 60%, 57%;
+  --hsl-white: 0, 0%, 100%;
+  --hsl-bright: 209, 55%, 45%;
+  --hsl-light: 48, 11%, 91%;
+  --hsl-light-bright: 193, 70%, 90%;
+  --hsl-shade: 197, 58%, 13%;
+  --hsl-black: 60, 3%, 13%;
+
+  /*  Colors */
+  --clr-primary: hsl(var(--hsl-primary), 100%);
+  --clr-secondary: hsl(var(--hsl-secondary), 100%);
+  --clr-white: hsl(var(--hsl-white), 100%);
+  --clr-bright: hsl(var(--hsl-bright), 100%);
+  --clr-light-bright: hsl(var(--hsl-light-bright), 100%);
+  --clr-light: hsl(var(--hsl-light), 100%);
+  --clr-shade: hsl(var(--hsl-shade), 100%);
+  --clr-black: hsl(var(--hsl-black), 100%);
+
+  /*  Font Sizes */
+  --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+  --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+  --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
+  --fs-600: clamp(1.62rem, calc(1.37rem + 1.24vw), 2.33rem);
+  --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
+  --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
+  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+
+  /*  REM Sizes for padding, margins and font sizes */
+  --sz-05x: 0.5rem;
+  --sz-1x: 1rem;
+  --sz-2x: 2rem;
+  --sz-3x: 3rem;
+  --sz-4x: 4rem;
+  --sz-5x: 5rem;
+  --sz-6x: 6rem;
+  --sz-7x: 7rem;
+  --sz-8x: 8rem;
+  --sz-9x: 9rem;
+  --sz-10x: 10rem;
+  --sz-15x: 15rem;
+  --sz-20x: 20rem;
+}
